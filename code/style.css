@@ -1,0 +1,135 @@
+.container {
+    background-color: #ffffff;
+    width: 30.5%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    overflow-y: scroll;
+    top: 0;
+    margin: 0;
+    padding: 20px;
+    bottom: 15px;
+    scrollbar-width: thin;
+}
+
+
+.container h1 {
+    margin-left: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    word-spacing: -1.2px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.container p {
+    margin-left: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    word-spacing: -1.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+
+.container p1 {
+    margin-left: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12.5px;
+    letter-spacing: -0.4px;
+    word-spacing: -1.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.container ul {
+    margin-left: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12.3px;
+    letter-spacing: -0.4px;
+    word-spacing: -1.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.placeholder {
+    width: 34.5%;
+    background-color: #1e1e2e;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+}
+
+.matrix {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidenn;
+    margin: 0;
+    background-color: #1e1e2e;
+    padding: 0;
+}
+
+.canvas {
+    width: 100%; 
+    height: 100%; 
+    padding: 0; 
+    margin: 0;
+}
+
+:root{
+    --color-dark: black;
+    --color-light: #ff5782;
+}
+
+a{
+    font-size: 1em;
+    border-style: solid;
+    border-color: var(--color-dark);
+    border-width: 0 0 2px 0;
+
+    background-image: linear-gradient(45deg, var(--color-light) 4.99%, var(--color-dark) 5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 5%;
+    background-repeat: repeat;
+    transition: background-size 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+a:link, a:visited{
+    background-size: 5%;
+    border-color: var(--color-dark);
+}
+
+a:hover, a:active{
+    background-size: 4000%;
+    border-color: var(--color-light);
+}
