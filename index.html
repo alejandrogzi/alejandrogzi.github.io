@@ -17,54 +17,57 @@
     </head>
 
     <body>
-        <div class = "matrix">
-            <canvas id="canvas"></canvas>
-            <script src="code/script.js"></script>
+        <div class = "header">
+            <div class="header-text">
+                <h1><a href="https://alejandrogzi.github.io/">Alejandro Gonzales-Irribarren</a></h1>
+                <p>Bioinformatician focused on cancer genomics and multi-omics software-development with 4 years of experience.</p>
+                <div class="flex icon-space gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+                    <a href="mailto:jose.gonzalesdezavala1@unmsm.edu.pe" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail icon-size"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
+                    <a href="https://github.com/alejandrogzi" class="icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-size"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a>
+                    <a href="https://www.linkedin.com/in/alejandrogzi/" class="icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-size"><title>LinkedIn</title><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+                    <a href="https://scholar.google.com/citations?user=DvYdvlAAAAAJ&hl=es&oi=ao" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512" class="icon-size"><path fill="currentColor" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg></a>
+                    <a href="https://orcid.org/0000-0001-7010-8146" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" class="icon-size"><path fill="currentColor" d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg></a>
+                </div>          
+            </div>
+            <span class="photo">
+                <img class="photo" alt="Alejandro Gonzales-Irribarren" src="./docs/IMG_5238.jpg">
+            </span>
         </div>
 
-        <div class = "placeholder">
-            <h1> </h1>
+        <div class = "box">
+            <p>I'm a recently DVM graduate @ UNMSM, working as a bionformatics intern @ <a href="https://liigh.unam.mx/">LIIGH-UNAM</a>. With strong foundations in multi-omics and medicine informatics, I enjoy developing high-performance software for genomics data. Currently, I work mostly with Rust, Python, Nextflow and R. </p>
         </div>
 
-        <div class = "container">
-            <h1>Alejandro Gonzales-Irribarren</h1>
+    <div class="mini-menu">
+        <a style = "border-style: dashed;" href="https://alejandrogzi.github.io/pages/about.html">[about]</a>
+        <a style = "border-style: dashed;" href = "https://alejandrogzi.github.io/pages/tools.html">[tools]</a>
+        <a style = "border-style: dashed;" href = "https://alejandrogzi.github.io/pages/blog.html">[blog]</a>
+        <a style = "border-style: dashed;" href = "/docs/cv.pdf">[cv]</a>
+        <a style = "border-style: dashed;" href="mailto:jose.gonzalesdezavala1@unmsm.edu.pe">[contact]</a>
+    </div>
 
-            <section id = "about"></section>
-            <p>
-                <br style="line-height: 0.5;">&#x1F44B; hi!
-            </p>
+    <div class="normal-text">
+        <h3>What am I doing?</h3>
+        <ul>
+            <li>Supervised by Daniela Robles-Espinoza @ Universidad Nacional Autónoma de México, I'm working on human/dog prostate cancer transcriptional parallelisms.</li>
+            <li>With Mirko Zimic @ UPCH, I am studying the effect of the thermodynamic pressure on GC-related DNA mutations using over 60,000 <i>E. coli</i> generations </li>
+            <li>I'm developing <a style = "border-style: solid;" href ="https://github.com/alejandrogzi/postoga">postoga</a> with Michael Hiller and Bogdan Kirilenko @ LOEWE Centre for Translational Biodiversity Genomics, a post-processing pipeline attached to <a href="https://github.com/hillerlab/TOGA">TOGA</a>, a novel tool to infer orthologs.</li>
+        </ul>
 
-            <p>
-                I'm a last-year DVM candidate @ UNMSM, working as a bionformatics intern @ <a href="https://liigh.unam.mx/">LIIGH-UNAM</a>. With strong foundations in multi-omics and medicine informatics, I enjoy developing high-performance software for genomics data and creating streamlined biological pipelines.
-            </p>
+        <h3>What have I done?</h3>
+        <ul>
+            <li>I graduated <i>Summa Cum Laude</i> (1/82) [GPA: 4.0] from the School of Veterinary Medicine @ UNMSM! Some pictures <a style = "border-style: solid;" href ="https://www.linkedin.com/feed/update/urn:li:activity:7143823419720028160/">here</a>. </li>
+            <li>I've created <a style = "border-style: solid;" href="https://github.com/alejandrogzi/gtfsort">gtfsort</a>, a high-performance GTF sorter that uses a lexicographically-based index ordering algorithm, completely written in Rust and available <a  href="https://www.biorxiv.org/content/10.1101/2023.10.21.563454v1">here</a>. </li>
+            <li>I've developed a suite of tools to handle fast and efficient parallelized conversions between gene-annotation formats: <a style = "border-style: solid;" href="https://github.com/alejandrogzi/bed2gtf">bed2gtf</a> and <a style = "border-style: solid;" href="https://github.com/alejandrogzi/bed2gff">bed2gff</a>, both written in Rust. </li>
+            <li>I've worked with Jose-Luis Rodriguez @ Universidad Complutense de Madrid on the gene expression effect in neuroblastoma cell cultures induced by <a style = "border-style: solid;" href="https://journals.sagepub.com/doi/abs/10.1177/07482337221089585">allethrin</a>, a pyrethroid.  </li>
+            <li>I'm also the creator of <a style = "border-style: solid;" href="https://github.com/alejandrogzi/noel">noel</a>, a per-gene non-overlapping exon length calculator, and <a style = "border-style: solid;" href="https://github.com/alejandrogzi/to-trans">to-trans</a>, a transcriptome builder from fasta + GTF/GFF.</li>
+            <li>I was the founder president of the Circle of Veterinary Studies in Epidemiology @ UNMSM, a student group focused on epidemiology-related talks/research/training.</li>
+            <li>I won the 1st place in the 2021 International Congress of Biosciences (ICB-HAMUTAY) and recognized as a distinguished participant at the 2021 Pan American Veterinary Association Congress with a research in canine prostate cancer molecular markers.</li> 
+        </ul>
+    </div>
 
-            <p1>
-                Here are some projects/stuff I'm doing/achieving right now:
-                <ul>
-                    <li>Supervised by Daniela Robles-Espinoza @ Universidad Nacional Autónoma de México, I'm working on human/dog prostate cancer transcriptional parallelisms.</li>
-                    <li>With Mirko Zimic @ UPCH, I am working on a thermodynamic driven DNA mutational pressure hypothesis and Tuberculosis platelet-associated molecular markers. </li>
-                    <li>I'm developing <a href ="https://github.com/alejandrogzi/postoga">postoga</a> with Michael Hiller and Bogdan Kirilenko @ LOEWE Centre for Translational Biodiversity Genomics, a post-processing pipeline attached to <a href="https://github.com/hillerlab/TOGA">TOGA</a>, a novel tool to infer orthologs.</li>
-                    <li>I'm about to graduate as Summa Cum Laude, after six consecutive years occupying the 1st place at my school.</li>
-                </ul>
-            </p1>
-
-            <p1>
-                and this is what I've done so far:
-                <ul>
-                    <li>I've created <a href="https://github.com/alejandrogzi/gtfsort">gtfsort</a>, a high-performance GTF sorter that uses a lexicographically-based index ordering algorithm, completely written in Rust and available <a  href="https://www.biorxiv.org/content/10.1101/2023.10.21.563454v1">here</a>. </li>
-                    <li>I've developed a suite of tools to handle fast and efficient parallelized conversions between gene-annotation formats: <a href="https://github.com/alejandrogzi/bed2gtf">bed2gtf</a> and <a href="https://github.com/alejandrogzi/bed2gff">bed2gff</a>, both written in Rust. </li>
-                    <li>I've worked with Jose-Luis Rodriguez @ Universidad Complutense de Madrid on the gene expression effect in neuroblastoma cell cultures induced by <a href="https://journals.sagepub.com/doi/abs/10.1177/07482337221089585">allethrin</a>, a pyrethroid.  </li>
-                    <li>I'm also the creator of: <a href="https://github.com/alejandrogzi/noel">noel</a>, a per-gene non-overlapping exon length calculator; <a href="https://github.com/alejandrogzi/to-trans">to-trans</a>, a transcriptome builder from fasta + GTF/GFF.</li>
-                    <li>I was the founder president of the Circle of Veterinary Studies in Epidemiology @ UNMSM, a student group focused on epidemiology-related talks/research/training.</li>
-                    <li>I won the 1st place in the 2021 International Congress of Biosciences (ICB-HAMUTAY) and recognized as a distinguished participant at the 2021 Pan American Veterinary Association Congress with a research in canine prostate cancer molecular markers.</li> 
-                </ul>
-            </p1>
-
-            <section id = "contact"></section>
-            <p1>
-                I'm always open to new projects and collaborations, so feel free to <a href="mailto:jose.gonzalesdezavala1@unmsm.edu.pe">contact me</a>. Consider checking out my <a href="https://github.com/alejandrogzi">GitHub</a>, <a href="https://www.linkedin.com/in/alejandrogzi/">LinkedIn</a>, or <a href="https://scholar.google.com/citations?user=DvYdvlAAAAAJ&hl=en">Google Scholar</a> profiles.
-            </p1>
-        </div>
-
+    <div class="footer">
+        <p>© 2024 Alejandro Gonzales-Irribarren :: Updated: 11/1/24</p>
+    </div>
     </body>
 </html>

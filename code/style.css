@@ -1,118 +1,147 @@
-.container {
+body{
     background-color: #ffffff;
-    max-width: 500px;
-    width: 70%;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
     padding: 20px 30px 20px 30px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    overflow-y: scroll;
-    top: 0;
-    bottom: 15px;
-    scrollbar-width: thin;
+    max-width: 700px;
+    margin: auto;
 }
 
-
-.container h1 {
-    margin-left: 20px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 18px;
-    letter-spacing: -0.6px;
-    word-spacing: -1.2px;
-    color: #000000;
-    font-weight: 600;
-    text-decoration: rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-.container p {
-    margin-left: 20px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 13px;
-    letter-spacing: -0.4px;
-    word-spacing: -1.6px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-
-.container p1 {
-    margin-left: 20px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 12.5px;
-    letter-spacing: -0.4px;
-    word-spacing: -1.6px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-.container ul {
-    margin-left: 20px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 12.3px;
-    letter-spacing: -0.4px;
-    word-spacing: -1.6px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-.placeholder {
-    width: 34.5%;
-    background-color: #1e1e2e;
-    left: 50%;
-    transform: translate(-50%);
+.photo {
+    border-radius: 50%;
+    display: flex;
+    position: relative;
     overflow: hidden;
-    top: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 20px;
-    position: fixed;
+    width: 10rem;
+    height: 10rem;
+    flex-shrink: 0;
+    margin-top: 3%;
+    margin-right: 8%;
 }
 
-.matrix {
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    overflow: hidenn;
-    margin: 0;
-    background-color: #1e1e2e;
-    padding: 0;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.canvas {
-    width: 100%; 
-    height: 100%; 
-    padding: 0; 
-    margin: 0;
+.header-text {
+    flex: 1 1 0%;
 }
 
-:root{
-    --color-dark: black;
-    --color-light: #ff5782;
+.header h1 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.header p {
+    text-wrap: pretty;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    color: hsl(var(--muted-foreground));
+    font-size: .875rem;
+    line-height: 1.25rem;
+    max-width: 25rem;
+}
+
+.box {
+    background-color: rgb(228, 228, 228, 0.5);
+    padding : 10px;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 7%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-wrap: pretty;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    color: hsl(var(--muted-foreground));
+    font-size: .875rem;
+    line-height: 1rem;
+    justify-content: space-between;
+
+}
+
+
+.icon {
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    --tw-ring-offset-color: hsl(var(--background));
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    background-color: hsl(var(--background));
+    border-color: hsl(var(--input));
+    border-width: 1px;
+    border-radius: calc(var(--radius) - 2px);
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.icon-size {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.icon-space {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+    margin-left: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+}
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.font-mono {
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+}
+.pt-1 {
+    padding-top: 0.25rem;
+}
+.gap-x-1 {
+    -moz-column-gap: .25rem;
+    column-gap: 1rem;
+}
+.flex {
+    display: flex;
+}
+
+.mini-menu {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    column-gap: 3rem;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.normal-text {
+    text-wrap: pretty;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    color: hsl(var(--muted-foreground));
+    font-size: .875rem;
+    line-height: 1.25rem;
+    max-width: 40rem;
 }
 
 a{
     font-size: 1em;
-    border-style: solid;
+    /* border-style: solid; */
     border-color: var(--color-dark);
     border-width: 0 0 2px 0;
 
@@ -135,4 +164,22 @@ a:link, a:visited{
 a:hover, a:active{
     background-size: 4000%;
     border-color: var(--color-light);
+}
+
+:root{
+    --color-dark: black;
+    --color-light: #ff5782;
+}
+
+.footer {
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    font-size: .750rem;
+    line-height: 1.25rem;
+    color: gray;
+    align-items: center;
+    justify-content: center;
 }
