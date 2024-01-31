@@ -141,6 +141,12 @@ body{
     font-weight: 700;
 }
 
+.justify {
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .mini-menu {
     align-items: center;
     justify-content: center;
