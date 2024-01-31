@@ -45,11 +45,11 @@
                 Potential batch-effects were corrected using ComBat-Seq (sva v.3.36) <a href="https://github.com/zhangyuqing/ComBat-seq/">[7]</a> and subjected to DESeq2 (v.1.34) <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8">[8]</a> for the differential expression analysis. 
                 Gene set enrichment analysis was performed with gProfiler <a href="https://biit.cs.ut.ee/gprofiler/gost">[9]</a>.  
                 On the other hand, I used a modified version of proActiv (v.1.1.18) <a href="https://github.com/GoekeLab/proActiv">[10]</a> to estimate promoter activity in each cancer-type. 
-                To call variants, each FASTQ was pre-process with Opossum (v.0.2) <a href="https://github.com/BSGOxford/Opossum">[11]</a> and evaluated with Platypus (v.0.1.5) <a href="https://github.com/andyrimmer/Platypus?tab=readme-ov-file">[12]</a> to detect specific single nucleotide polymorphisms (SNPs). 
+                To call variants, each BAM file was pre-process with Opossum (v.0.2) <a href="https://github.com/BSGOxford/Opossum">[11]</a> and evaluated with Platypus (v.0.1.5) <a href="https://github.com/andyrimmer/Platypus?tab=readme-ov-file">[12]</a> to detect specific single nucleotide polymorphisms (SNPs). 
                 Control runs served to annotate new variants, generate a new Panel Of Normals (PON) and filter those present in cancer calls. 
                 To improve the sensitivity on calling true variants, I included three external PONs: 1) <a href="https://www.ensembl.org/Canis_lupus_familiaris/Info/Index">Ensembl dbSNP</a>; 2) <a href="https://www.nature.com/articles/s41467-019-09373-w">Plassais et al., (2016)</a>; 3) <a href="https://genome.cshlp.org/content/24/8/1308">Gou et al., (2019)</a>. 
                 It is of importance to note that variants from the last two sources were called with CanFam3.1 as reference. 
-                To overcome this, we lifted over all chromosome-placed variants from that assembly to our reference ROS_Cfam_1.0, to end up with a PON of ~150 million variants. 
+                To overcome this, I lifted over all chromosome-placed variants from that assembly to our reference ROS_Cfam_1.0, to end up with a PON of ~150 million variants. 
                 To map any resultant gene from the analyses performed in this study to a potential cancer-related function, I cross-matched oncogenes, tumor suppressor genes, and cancer-related curated annotations from 4 databases: COSMIC <a href="https://cancer.sanger.ac.uk/cosmic">[13]</a>, ONGene <a href="https://ongene.bioinfo-minzhao.org/">[14]</a>, TSGene <a href="https://bioinfo.uth.edu/TSGene/">[15]</a>, and CANCROX <a href="https://cancrox.gmb.bio.br/view/index.php">[16]</a>. 
             </p>
 
@@ -66,7 +66,7 @@
                 Dimensional reduction techniques showed a clear positive correlation between spatial context and cancer-types. 
                 Both, linear and non-linear approaches, succeed in clustering similar types of malignancies: lymphoid-like (BCL, TCL, HS), epithelial-like (TCC, CRC, PC, HNSCC, CMC, THC, INS), mesenchymal-like (MEL, HSA, OSA) and CNS (GLA) (Fig. 1D, 1E). 
                 This confirms a specific pan-type signature across neoplasms with marked expression signals that are even able to differentiate specific types. 
-                The same conclusions could be achieved using other methods, such as hierarchical clustering, where we could see how genes behave across all types (Fig. 1F).
+                The same conclusions could be achieved using other methods, such as hierarchical clustering, where I could see how genes behave across all types (Fig. 1F).
             </p>
 
             <p align="center">
