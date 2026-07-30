@@ -1,5 +1,6 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PP6PQMS81G"></script>
         <script>
@@ -14,137 +15,631 @@
         <meta charset="utf-8" />
         <title>Alejandro Gonzales-Irribarren</title>
         <link rel="stylesheet" type = "text/css" href="code/style.css">
-    </head>
 
-    <body>
-        <div class = "header">
-            <div class="header-text">
-                <h1><a href="https://alejandrogzi.github.io/">Alejandro Gonzales-Irribarren</a></h1>
-                <p>Bioinformatician focused on cancer genomics and multi-omics software-development with 4 years of experience.</p>
-                <div class="flex icon-space gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
-                    <a href="mailto:alejandrxgzi@gmail.com" class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail icon-size"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
-                    <a href="https://github.com/alejandrogzi" class="icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-size"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a>
-                    <a href="https://www.linkedin.com/in/alejandrogzi/" class="icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-size"><title>LinkedIn</title><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
-                    <a href="https://scholar.google.com/citations?user=DvYdvlAAAAAJ&hl=es&oi=ao" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512" class="icon-size"><path fill="currentColor" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg></a>
-                    <a href="https://orcid.org/0000-0001-7010-8146" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" class="icon-size"><path fill="currentColor" d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/></svg></a>
-                </div>          
-            </div>
-            <span class="photo">
-                <img class="photo" alt="Alejandro Gonzales-Irribarren" src="./docs/photo.jpeg">
-            </span>
-        </div>
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="Alejandro Gonzales-Irribarren — veterinarian/computer scientist">
+<meta property="og:description" content="Alejandro Gonzales-Irribarren — veterinarian/computer scientist">
+<meta property="og:url" content="https://alejandrogzi.github.io">
+<meta property="og:type" content="website">
+<meta name="description" content="Alejandro Gonzales-Irribarren — veterinarian/computer scientist">
+<title>Alejandro Gonzales-Irribarren</title>
+<style>
 
-        <div class = "box">
-            <p>Recently DVM graduate @ UNMSM, working as a bionformatics software developer @ <a href="https://github.com/open2c">Open Chromosome Collective</a>. With strong foundations in multi-omics and medicine informatics, I enjoy developing high-performance software for genomics data. Currently, I work mostly with Rust, Python, Nextflow and R. </p>
-        </div>
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("/styles/BerkeleyMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-    <div class="mini-menu">
-        <a style = "border-style: dashed;" href="https://alejandrogzi.github.io/pages/about.html">[about]</a>
-        <a style = "border-style: dashed;" href = "https://alejandrogzi.github.io/pages/blog.html">[blog]</a>
-        <a style = "border-style: dashed;" href = "https://alejandrogzi.github.io/pages/tools.html">[tools]</a>
-        <a style = "border-style: dashed;" href = "/docs/cv.pdf">[cv]</a>
-        <a style = "border-style: dashed;" href="mailto:alejandrxgzi@gmail.com">[contact]</a>
-    </div>
+:root {
+  color-scheme: light;
 
-    <div id="history" class="small-text">
-        <div class="entry row">
-            <div class="timespan">
-            2024
-            </div>
-            <div class="ico">
-            <div class="entry-dot"></div>
-            <img style = "width: 45px; margin-left: 18px;", src="docs/open2c.png" />
-            </div>
-            <div style="margin-left: 6px;" class="desc">
-                Now at the <a style = "border-style: solid;" href="https://github.com/open2c">Open2C</a>
-                team with Ph.D. Nezar Abdennur as part of <a style = "border-style: solid;" href="https://summerofcode.withgoogle.com/programs/2024/projects/fHBnxNYD">GSoC 2024</a>.
-                Here, I am working on the Rust-based acceleration of bioframes' genomic ineterval
-                operations and a Python API to access universal metadata assembly.
-            </div>
-        </div>
+  /* Page colors */
+  --bg: #ffffff;
+  --ink: #1a1a1a;
+  --accent: #b13b1e;
 
-        <div class="entry row">
-            <div class="timespan">
-            2024
-            </div>
-            <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="docs/tbg.jpg" />
-            </div>
-            <div class="desc">
-            Worked in the Comparative Genomics team at <a style = "border-style: solid;" 
-            href="https://tbg.senckenberg.de/">Senckenberg Frankfurt</a>, developing algorithms to 
-            resolve genome-wide annotations produced by orthology inference-based methods using 
-            long-read transcriptomics.
+  /* Default link colors */
+  --link: #1a1a1a;
+  --link-hover: #b13b1e;
 
-            </div>
-        </div>
+  /* Primary color scheme */
+  --color-dark: #6674e8;
+  --color-light: #9aa7ff;
 
-        <div class="entry row">
-            <div class="timespan">
-            2024
-            </div>
-            <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="docs/upch.jpg" />
-            </div>
-            <div class="desc">
-            Right after graduation, I worked as Bioinformatics Assitant with Ph.D. Mirko Zimic 
-            at <a style = "border-style: solid;" href="https://investigacion.cayetano.edu.pe/catalogo/biotecnologia-lbbm-gbi/">UPCH</a>. 
-            Here, we studied the effect of the thermodynamic pressure on GC-related DNA mutations 
-            using over 60,000 <i>E. coli</i> generations.
-            </div>
-          </div>
+  /* Secondary color scheme */
+  --color-alt-light: #bb5d97;
+  --color-alt-dark: #ff5782;
+  
+    /* Third color scheme */
+  --color-third-alt-light: #9F8FB3;
+  --color-third-alt-dark: #A66DED;
 
-        <div class="entry row">
-            <div class="timespan">
-            2023
-            </div>
-            <div class="ico">
-            <div class="entry-dot"></div>
-            <img style="width: 55px; margin-left: 15px;" src="docs/unam.svg" />
-            </div>
-            <div class="desc">
-            During my last year at UNMSM, I worked as an Oncology Bioinformatics Intern at 
-            <a style = "border-style: solid;" href="https://liigh.unam.mx/">LIIGH-UNAM</a>, where I 
-            investigated human/dog prostate cancer transcriptional parallelisms.
-            </div>
-          </div>
 
-          <div class="entry row">
-            <div class="timespan">
-              2018 - 2023
-            </div>
-            <div class="ico">
-              <div class="entry-dot"></div>
-              <img style="width: 45px; margin-left: 20px;" src="docs/UNMSM.svg" />
-            </div>
-            <div style="margin-left: 4.5px;" class="desc">
-              DVM at the <a style = "border-style: solid;" href="https://en.wikipedia.org/wiki/National_University_of_San_Marcos">National University of San Marcos</a>. Graduated with the highest honors (<i>Summa Cum Laude</i>) 
-              after holding the 1st place during 6 consecutive years. Published 2 papers and 3 bioinformatic tools. 
-              Won 1 international congress and was recognized by the Pan American Veterinary Association.
-            </div>
-          </div>
 
-    </div>
+  --mono:
+    "Berkeley Mono",
+    "TX-02",
+    ui-monospace,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    monospace;
+}
 
-    <div class="normal-text">
-        <h3>What else have I done?</h3>
-        <ul>
-            <li>Just published my most recent tool: <a style = "border-style: solid;" href="https://github.com/alejandrogzi/gxf2bed">gxf2bed</a>, the fastest G{F,T}F-to-BED converter around the block!</li>
-            <li>I graduated <i>Summa Cum Laude</i> (1/82) [GPA: 4.0] from the School of Veterinary Medicine @ UNMSM! </li>
-            <li>Developed <a style = "border-style: solid;" href ="https://github.com/alejandrogzi/postoga">postoga</a> with Michael Hiller and Bogdan Kirilenko @ LOEWE Centre for Translational Biodiversity Genomics, a post-processing pipeline attached to <a href="https://github.com/hillerlab/TOGA">TOGA</a>, a novel tool to infer orthologs.</li>
-            <li>I've created <a style = "border-style: solid;" href="https://github.com/alejandrogzi/gtfsort">gtfsort</a>, a high-performance GTF sorter that uses a lexicographically-based index ordering algorithm, completely written in Rust and available <a style = "border-style: solid;"  href="https://www.biorxiv.org/content/10.1101/2023.10.21.563454v1">here</a>. </li>
-            <li>I've developed a suite of tools to handle fast and efficient parallelized conversions between gene-annotation formats: <a style = "border-style: solid;" href="https://github.com/alejandrogzi/bed2gtf">bed2gtf</a> and <a style = "border-style: solid;" href="https://github.com/alejandrogzi/bed2gff">bed2gff</a>, both written in Rust. </li>
-            <li>I've worked with Jose-Luis Rodriguez @ Universidad Complutense de Madrid on the gene expression effect in neuroblastoma cell cultures induced by <a style = "border-style: solid;" href="https://journals.sagepub.com/doi/abs/10.1177/07482337221089585">allethrin</a>, a pyrethroid.  </li>
-            <li>I'm also the creator of <a style = "border-style: solid;" href="https://github.com/alejandrogzi/noel">noel</a>, a per-gene non-overlapping exon length calculator, and <a style = "border-style: solid;" href="https://github.com/alejandrogzi/to-trans">to-trans</a>, a transcriptome builder from fasta + GTF/GFF.</li>
-            <li>I was the founder president of the Circle of Veterinary Studies in Epidemiology @ UNMSM, a student group focused on epidemiology-related talks/research/training.</li>
-            <li>I won the 1st place in the 2021 International Congress of Biosciences (ICB-HAMUTAY) and recognized as a distinguished participant at the 2021 Pan American Veterinary Association Congress with a research in canine prostate cancer molecular markers.</li> 
-        </ul>
-    </div>
+/* ---------------------------------------------------------
+   Reset
+   --------------------------------------------------------- */
 
-    <div class="footer">
-        <p>© 2024 Alejandro Gonzales-Irribarren :: Updated: 02/05/24</p>
-    </div>
-    </body>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  color: var(--ink);
+  background: var(--bg);
+  font-family: var(--mono);
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+/* ---------------------------------------------------------
+   Main sheet
+   --------------------------------------------------------- */
+
+.sheet {
+  width: max-content;
+  margin: 0 auto;
+  font-size: clamp(9px, 1.7vw, 14px);
+  line-height: 1.17;
+}
+
+pre.datasheet {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: inherit;
+  line-height: inherit;
+  white-space: pre;
+  tab-size: 4;
+}
+
+/* ---------------------------------------------------------
+   Default links
+
+   Every link receives a subtle underline.
+   --------------------------------------------------------- */
+
+pre.datasheet a,
+.conferences a {
+  color: var(--link);
+
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(26, 26, 26, 0.25);
+  text-underline-offset: 2px;
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+pre.datasheet a:hover,
+pre.datasheet a:focus-visible,
+.conferences a:hover,
+.conferences a:focus-visible {
+  color: var(--link-hover);
+  text-decoration-color: rgba(177, 59, 30, 0.55);
+  outline: none;
+}
+
+/* ---------------------------------------------------------
+   Existing accent class
+   --------------------------------------------------------- */
+
+pre.datasheet .em,
+.conferences .em {
+  color: var(--accent);
+}
+
+/* Links using .em retain their subtle underline */
+pre.datasheet a.em,
+.conferences a.em {
+  text-decoration-color: rgba(177, 59, 30, 0.35);
+}
+
+pre.datasheet a.em:hover,
+pre.datasheet a.em:focus-visible,
+.conferences a.em:hover,
+.conferences a.em:focus-visible {
+  color: color-mix(in srgb, var(--accent) 65%, white);
+  text-decoration-color: currentColor;
+}
+
+/* ---------------------------------------------------------
+   Primary color scheme
+
+   Usage:
+   <span class="primary">text</span>
+   <a class="primary" href="#">link</a>
+   --------------------------------------------------------- */
+
+.primary {
+  color: var(--color-dark);
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+.primary:hover {
+  color: var(--color-light);
+}
+
+pre.datasheet a.primary,
+.conferences a.primary {
+  color: var(--color-dark);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-dark) 30%, transparent);
+}
+
+pre.datasheet a.primary:hover,
+pre.datasheet a.primary:focus-visible,
+.conferences a.primary:hover,
+.conferences a.primary:focus-visible {
+  color: var(--color-light);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-light) 65%, transparent);
+}
+
+/* Permanently lighter primary variant */
+.primary-light {
+  color: var(--color-light);
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+.primary-light:hover {
+  color: color-mix(in srgb, var(--color-light) 65%, white);
+}
+
+pre.datasheet a.primary-light,
+.conferences a.primary-light {
+  color: var(--color-light);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-light) 35%, transparent);
+}
+
+pre.datasheet a.primary-light:hover,
+pre.datasheet a.primary-light:focus-visible,
+.conferences a.primary-light:hover,
+.conferences a.primary-light:focus-visible {
+  color: color-mix(in srgb, var(--color-light) 65%, white);
+  text-decoration-color: currentColor;
+}
+
+/* ---------------------------------------------------------
+   Secondary color scheme
+
+   Usage:
+   <span class="secondary">text</span>
+   <a class="secondary" href="#">link</a>
+   --------------------------------------------------------- */
+
+.secondary {
+  color: var(--color-alt-dark);
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+.secondary:hover {
+  color: var(--color-alt-light);
+}
+
+pre.datasheet a.secondary,
+.conferences a.secondary {
+  color: var(--color-alt-dark);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-alt-dark) 30%, transparent);
+}
+
+pre.datasheet a.secondary:hover,
+pre.datasheet a.secondary:focus-visible,
+.conferences a.secondary:hover,
+.conferences a.secondary:focus-visible {
+  color: var(--color-alt-light);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-alt-light) 65%, transparent);
+}
+
+/* Permanently lighter secondary variant */
+.secondary-light {
+  color: var(--color-alt-light);
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+.secondary-light:hover {
+  color: color-mix(in srgb, var(--color-alt-light) 65%, white);
+}
+
+pre.datasheet a.secondary-light,
+.conferences a.secondary-light {
+  color: var(--color-alt-light);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-alt-light) 35%, transparent);
+}
+
+pre.datasheet a.secondary-light:hover,
+pre.datasheet a.secondary-light:focus-visible,
+.conferences a.secondary-light:hover,
+.conferences a.secondary-light:focus-visible {
+  color: color-mix(in srgb, var(--color-alt-light) 65%, white);
+  text-decoration-color: currentColor;
+}
+
+/* ---------------------------------------------------------
+   Tertiary color scheme
+
+   Usage:
+   <span class="tertiary">text</span>
+   <a class="tertiary" href="#">link</a>
+   --------------------------------------------------------- */
+
+.tertiary {
+  color: var(--color-third-alt-dark);
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+.tertiary:hover {
+  color: var(--color-third-alt-light);
+}
+
+pre.datasheet a.tertiary,
+.conferences a.tertiary {
+  color: var(--color-third-alt-dark);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-third-alt-dark) 30%, transparent);
+}
+
+pre.datasheet a.tertiary:hover,
+pre.datasheet a.tertiary:focus-visible,
+.conferences a.tertiary:hover,
+.conferences a.tertiary:focus-visible {
+  color: var(--color-third-alt-light);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-third-alt-light) 65%, transparent);
+}
+
+/* Permanently lighter tertiary variant */
+.tertiary-light {
+  color: var(--color-third-alt-light);
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+.tertiary-light:hover {
+  color: color-mix(in srgb, var(--color-third-alt-light) 65%, white);
+}
+
+pre.datasheet a.tertiary-light,
+.conferences a.tertiary-light {
+  color: var(--color-third-alt-light);
+  text-decoration-color:
+    color-mix(in srgb, var(--color-third-alt-light) 35%, transparent);
+}
+
+pre.datasheet a.tertiary-light:hover,
+pre.datasheet a.tertiary-light:focus-visible,
+.conferences a.tertiary-light:hover,
+.conferences a.tertiary-light:focus-visible {
+  color: color-mix(in srgb, var(--color-third-alt-light) 65%, white);
+  text-decoration-color: currentColor;
+}
+
+/* ---------------------------------------------------------
+   Strong underline
+
+   Default links already have a subtle underline.
+   Only elements tagged with .underline receive this stronger
+   underline.
+
+   Usage:
+   <span class="underline">text</span>
+   <a class="underline" href="#">link</a>
+   --------------------------------------------------------- */
+
+.underline {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px;
+
+  transition:
+    color 0.12s ease,
+    text-decoration-color 0.12s ease;
+}
+
+pre.datasheet a.underline,
+.conferences a.underline {
+  text-decoration-thickness: 2px;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px;
+}
+
+pre.datasheet a.underline:hover,
+pre.datasheet a.underline:focus-visible,
+.conferences a.underline:hover,
+.conferences a.underline:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+/* ---------------------------------------------------------
+   Combined color and strong underline classes
+
+   Usage:
+   <a class="primary underline">text</a>
+   <a class="secondary underline">text</a>
+   --------------------------------------------------------- */
+
+.primary.underline,
+pre.datasheet a.primary.underline,
+.conferences a.primary.underline {
+  color: var(--color-dark);
+  text-decoration-color: currentColor;
+}
+
+.primary.underline:hover,
+pre.datasheet a.primary.underline:hover,
+pre.datasheet a.primary.underline:focus-visible,
+.conferences a.primary.underline:hover,
+.conferences a.primary.underline:focus-visible {
+  color: var(--color-light);
+  text-decoration-color: currentColor;
+}
+
+.primary-light.underline,
+pre.datasheet a.primary-light.underline,
+.conferences a.primary-light.underline {
+  color: var(--color-light);
+  text-decoration-color: currentColor;
+}
+
+.primary-light.underline:hover,
+pre.datasheet a.primary-light.underline:hover,
+pre.datasheet a.primary-light.underline:focus-visible,
+.conferences a.primary-light.underline:hover,
+.conferences a.primary-light.underline:focus-visible {
+  color: color-mix(in srgb, var(--color-light) 65%, white);
+  text-decoration-color: currentColor;
+}
+
+.secondary.underline,
+pre.datasheet a.secondary.underline,
+.conferences a.secondary.underline {
+  color: var(--color-alt-dark);
+  text-decoration-color: currentColor;
+}
+
+.secondary.underline:hover,
+pre.datasheet a.secondary.underline:hover,
+pre.datasheet a.secondary.underline:focus-visible,
+.conferences a.secondary.underline:hover,
+.conferences a.secondary.underline:focus-visible {
+  color: var(--color-alt-light);
+  text-decoration-color: currentColor;
+}
+
+.secondary-light.underline,
+pre.datasheet a.secondary-light.underline,
+.conferences a.secondary-light.underline {
+  color: var(--color-alt-light);
+  text-decoration-color: currentColor;
+}
+
+.secondary-light.underline:hover,
+pre.datasheet a.secondary-light.underline:hover,
+pre.datasheet a.secondary-light.underline:focus-visible,
+.conferences a.secondary-light.underline:hover,
+.conferences a.secondary-light.underline:focus-visible {
+  color: color-mix(in srgb, var(--color-alt-light) 65%, white);
+  text-decoration-color: currentColor;
+}
+
+/* ---------------------------------------------------------
+   Text selection
+   --------------------------------------------------------- */
+
+::selection {
+  color: var(--bg);
+  background: var(--ink);
+}
+
+
+/* ---------------------------------------------------------
+   Additional elements
+   --------------------------------------------------------- */
+
+.tagline {
+  color: var(--ink);
+  opacity: 0.55;
+}
+
+.outdoor {
+  display: inline-block;
+  width: 2ch;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------
+   Responsive sizing
+   --------------------------------------------------------- */
+
+@media (min-width: 960px) {
+  .sheet {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 16px 8px;
+  }
+
+  .sheet {
+    font-size: clamp(8px, 2.4vw, 11px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+<pre class="datasheet">
+DATASHEET                                   <strong>PhD(c)/BVet. A. Gonzales-Irribarren</strong>
+───────────────────────────────────────────────────────────────────────────────
+One of the few veterinarian/computer-scientists in the world. 
+
+Have spend six years working at the intersection of healthcare, software, and 
+genomics in the search of stable translational models.
+
+Author of the first open-sourced DSL2-flavored <a href="#make_lastz_chains" class="tertiary">whole-genome alignment pipeline</a>,
+the highest confidence <a href="#xORF" class="tertiary">ORF prediction framework</a> to date, and the widely used 
+set of gxf/bed high performance <a href="#gxf2bed" class="tertiary">converters</a>.
+
+Co-author of <a href="#TOGA2" class="primary">TOGA2</a>, the top-performer homology-based gene annotation workflow. 
+
+Night owl and open-source software advocate, usually fascinated by cancer, 
+computers, and sports.
+
+
+EXPERTISE
+───────────────────────────────────────────────────────────────────────────────
+                ┌──────────┐                                          
+                │ MEDICINE ├───┐            ┌── applied research 
+                └──────────┘   │            │                       
+                ┌──────────┐   │  ░░░░░░░░  ├── algorithms         
+                │ SOFTWARE ├───┼─ GENOMICS ─┤                      
+                └──────────┘   │  ░░░░░░░░  ├── QoL tools        
+                ┌──────────┐   │            │                        
+                │ GENETICS ├───┘            └── pipelines
+                └──────────┘                                         
+
+<a href="https://github.com/alejandrogzi">OPEN SOURCE</a>
+───────────────────────────────────────────────────────────────────────────────
+                                                                    <a href="#github" class="secondary">*pipelines</a>
+                                                                    <a href="">*lib/CLI</a>
+        ┌────────────── <a href="#softmask" class="secondary">softmask</a> ────────────────────┐              <a href="" class="primary">*co-author</a>
+        │                                            │                        
+  ┌─────┴────┐      ┌── <a href="#chaintools" class="">chaintools</a> ──┐     ┌─────────┴─────────┐              
+  │ HOMOLOGY ├──────┼── <a href="#psltools" class="">psltools</a> ────┼─────┤ <a href="#make_lastz_chains" class="secondary">make_lastz_chains</a> ├───┐          
+  └──────────┘      └── <a href="#netools" class="">netools</a>  ────┘     └───────────────────┘   ├─── <a href="#TOGA2" class="primary">TOGA2</a> 
+       │                                         <a href="#postoga" class="">postoga</a> ──────────┘          
+   ░░░░░░░░░░                                   ────┬────                     
+   ANNOTATION                                       │                         
+   ░░░░░░░░░░                         ┌─────────────┘                  ┌─────┐
+       │                              │                ┌── <a href="#arktools" class="">arktools</a> ───┤ <a href="#ark" class="secondary">ark</a> │
+┌───────────────┐              ┌── <a href="#bed2gtf" class="">bed2gtf</a> ─┐ ┌──────┐ │               └──┬──┘
+│ TRANSCRIPTOME ├─── <a href="#genepred" class="">genepred</a> ─┼── <a href="#gxf2bed" class="">gxf2bed</a> ─┼─┤ <a href="#xORF" class="secondary">xORF</a> ├─┤                  │   
+└───────────────┘              └── <a href="#gtfsort" class="">gtfsort</a> ─┘ └───┬──┘ │   ┌──────┐       │   
+                                                  │    └───┤ <a href="#xASM" class="secondary">xASM</a> │       │   
+                                     <a href="#chromsize" class="">chromsize</a> │  │        └──┬───┘       │   
+                                       <a href="#xloci" class="">xloci</a>   ├──┴───────────┴───────────┘ 
+                                      <a href="#fxsplit" class="">fxsplit</a>  │                   
+                                      
+EXPERIENCE
+───────────────────────────────────────────────────────┬───────────────────────
+2025/06 → PhD candidate in Computer Science        LU  ┤       Leipzig, Germany
+2024/07 → Bioinformatics Scientist                TBG  ┤     Frankfurt, Germany
+2024/03 → Google SoC Developer                  Google ┤            Boston, USA
+2024/01 → Bioinformatics Intern                 LIIGH  ┤      Queretaro, Mexico
+2023/12 → Bachelor in Veterinary Medicine       UNMSM  ┤             Lima, Peru
+
+
+MISCELLANEOUS
+───────────────────────────────────────────────────────────────────────────────
+<a href="#youtube">Valedictorian</a> • Veterinary Medicine School at UNMSM         ← 2018/03 - 2023/12
+Member • <a href="#bat1k">Bat1K Consortium</a>                                   ← 2024/07
+Member • <a href="#batprotect">BatProtect ERC Consortium</a>                          ← 2024/07
+Member • <a href="#vgp">Vetebrate Genome Project Consortium</a>                ← 2026/01
+First place • International Congress of Biosciences         ← 2021/11
+Co-Developer • <a href="#oxbow">oxbow</a>                                        ← 2024/04
+Founder • Circle of Veterinary Studies in Epidemiology      ← 2023/06
+
+
+CONTACT                                       <span class="tagline">veterinarian | computer scientist</span>
+───────────────────────────────────────────────────────────────────────────────
+Alejandro Gonzales-Irribarren ▕  alejandrxgzi@gmail.com ▕  GitHub: alejandrogzi
+
+</pre>
+
+</div>
+
+
+<script>
+    
+  const aliases = {
+    'make_lastz_chains': 'https://github.com/hillerlab/make_lastz_chains',
+    'TOGA2': 'https://github.com/hillerlab/TOGA2',
+    'softmask': 'https://github.com/hillerlab/softmask',
+    'genepred': 'https://github.com/alejandrogzi/genepred',
+    'gtfsort': 'https://github.com/alejandrogzi/gtfsort',
+    'bed2gtf': 'https://github.com/alejandrogzi/bed2gtf',
+    'gxf2bed': 'https://github.com/alejandrogzi/gxf2bed',
+    'chromsize': 'https://github.com/alejandrogzi/chromsize',
+    'xloci': 'https://github.com/alejandrogzi/xloci',
+    'fxsplit': 'https://github.com/alejandrogzi/fxsplit',
+    'xASM': 'https://github.com/alejandrogzi/xASM',
+    'xORF': 'https://github.com/alejandrogzi/xORF',
+    'postoga': 'https://github.com/alejandrogzi/postoga',
+    'chaintools': 'https://github.com/alejandrogzi/chaintools',
+    'psltools': 'https://github.com/alejandrogzi/psltools',
+    'netools': 'https://github.com/alejandrogzi/netools',
+    'arktools': 'https://github.com/alejandrogzi/arktools',
+    'ark': 'https://github.com/alejandrogzi/ark',
+    'youtube': 'https://www.youtube.com/watch?v=Xk6wCD2Ypp8',
+    'bat1k': 'https://bat1k.com/',
+    'batprotect': 'https://batprotect.eu/people/',
+    'vgp': 'https://vertebrategenomesproject.org/',
+    'oxbow': 'https://github.com/abdenlab/oxbow',
+  };
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    if (aliases[id]) a.href = aliases[id];
+  });
+  
+</script>
+
+</body>
 </html>
